@@ -6,12 +6,12 @@ use Source\Validator\Validator;
 
 $json = new stdClass();
 
-$paulo = new Usuario();
-$paulo->setNome('c');
-$paulo->setEmail('');
+$usuario = new Usuario();
+$usuario->setNome('c');
+$usuario->setEmail('');
 
-if($paulo->isValid()) {
-   $paulo->save();
+if($usuario->isValid()) {
+   $usuario->save();
 }
 
 $json->msg = Validator::getMsg();
